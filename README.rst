@@ -58,15 +58,16 @@ In Linux, you can also find the python used by checking the libraries linked to 
 Once you find the python interpreter used by GDB, install :code:`eigengdb` using a corresponding python/pip (usually system pip).
 
 
-From Source
+Install Inside Container From Source
 ~~~~~~~~~~~
 
 .. code-block:: bash
 
-   git clone https://github.com/dmillard/eigengdb
-   cd eigengdb
-   python setup.py install # Make sure to use system python which matches GDB
-   python bin/eigengdb_register_printers
+    cd /tmp
+    git clone https://github.com/dmillard/eigengdb
+    cd eigengdb
+    sudo python setup.py install # Make sure to use system python which matches GDB
+    python bin/eigengdb_register_printers
 
 Test
 ----

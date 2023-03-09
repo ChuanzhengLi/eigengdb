@@ -32,6 +32,7 @@ import itertools
 import numpy as np
 from bisect import bisect_left
 
+np.set_printoptions(linewidth=200, formatter={'float': lambda x: "{:7.4f}".format(x) if x !=0 else "0      "})
 
 # Basic row/column iteration code for use with Sparse and Dense matrices
 class _MatrixEntryIterator(object):
